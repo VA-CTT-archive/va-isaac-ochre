@@ -129,6 +129,11 @@ public class HeadlessToolkit extends Toolkit
     public boolean init() {
         return true;
     }
+    
+    @Override
+    public boolean canStartNestedEventLoop() {
+        return false;
+    }
 
     @Override
     public Object enterNestedEventLoop(Object key) {
@@ -405,6 +410,11 @@ public class HeadlessToolkit extends Toolkit
 
     @Override
     public List<?> getScreens() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    
+    @Override
+    public ScreenConfigurationAccessor getScreenConfigurationAccessor() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
