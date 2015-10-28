@@ -130,7 +130,6 @@ public class HeadlessToolkit extends Toolkit
         return true;
     }
     
-    @Override
     public boolean canStartNestedEventLoop() {
         return false;
     }
@@ -413,7 +412,6 @@ public class HeadlessToolkit extends Toolkit
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
-    @Override
     public ScreenConfigurationAccessor getScreenConfigurationAccessor() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
